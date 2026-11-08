@@ -6,12 +6,12 @@
     <title>PocketKeep | محفظة ذكية لإدارة المصاريف</title>
     <meta
       name="description"
-      content="PocketKeep هي محفظة ذكية تساعدك على تسجيل مصاريفك اليومية وتتبع إنفاقك مع تقارير وتذكيرات ذكية."
+      content="PocketKeep يساعدك على تسجيل مصاريفك اليومية ومتابعة إنفاقك مع تقارير وتذكيرات، بسهولة ومن دون تسجيل دخول."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -19,45 +19,46 @@
   <body>
     <header class="topbar">
       <div class="container nav">
-        <div class="brand">
-          <div class="brand-mark">P</div>
+        <a class="brand" href="#home" aria-label="PocketKeep - الرئيسية">
+          <span class="brand-mark">P</span>
           <span>PocketKeep</span>
-        </div>
+        </a>
         <nav class="nav-links" aria-label="قائمة التنقل">
           <a href="#features">المزايا</a>
+          <a href="#how-it-works">طريقة الاستخدام</a>
           <a href="#screens">الشاشات</a>
-          <a href="#about">عن التطبيق</a>
+          <a href="#faq">أسئلة شائعة</a>
         </nav>
-        <a class="btn btn-small" href="https://play.google.com/store/apps/details?id=app.pocketkeep" target="_blank" rel="noopener noreferrer">تحميل التطبيق</a>
+        <a class="btn btn-small" href="https://play.google.com/store/apps/details?id=app.pocketkeep" target="_blank" rel="noopener noreferrer">حمّل التطبيق</a>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section id="home" class="hero">
         <div class="container hero-inner">
           <div class="hero-copy">
-            <span class="badge">محفظة ذكية ومريحة</span>
+            <span class="badge">محفظتك اليومية لإدارة المصاريف</span>
             <h1>مصروفك أوضح، وقراراتك المالية أذكى.</h1>
             <p>
-              سجل مصاريفك اليومية، تتبع إنفاقك، وأدر ميزانيتك بسهولة من خلال
-              تطبيق PocketKeep — بدون تعقيد، وبواجهة بسيطة وفعالة.
+              سجّل مصاريفك اليومية، تابع إنفاقك، واستفد من التقارير والتذكيرات
+              في تطبيق PocketKeep — بسهولة ومن دون تسجيل دخول.
             </p>
             <div class="cta-group">
-              <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=app.pocketkeep" target="_blank" rel="noopener noreferrer">تحميل التطبيق</a>
+              <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=app.pocketkeep" target="_blank" rel="noopener noreferrer">تحميل مجاني من Google Play</a>
               <a class="btn btn-secondary" href="#features">اكتشف المزايا</a>
             </div>
-            <ul class="mini-stats">
-              <li><strong>مصروفاتك</strong><span>في مكان واحد</span></li>
-              <li><strong>تقارير</strong><span>تساعدك على المتابعة</span></li>
-              <li><strong>تذكيرات</strong><span>لتنظيم يومك</span></li>
+            <ul class="mini-stats" aria-label="مزايا التطبيق">
+              <li><strong>تسجيل سهل</strong><span>لمصاريفك اليومية</span></li>
+              <li><strong>تقارير واضحة</strong><span>لمتابعة إنفاقك</span></li>
+              <li><strong>تذكيرات</strong><span>لتساعدك على التنظيم</span></li>
             </ul>
           </div>
 
           <div class="hero-visual">
             <div class="phone-card">
               <img
-                src="WhatsApp%20Image%202026-11-08%20at%209.49.29%20AM%20(1).jpeg"
-                alt="لقطة شاشة التطبيق"
+                src="WhatsApp%20Image%202026-11-08%20at%2010.09.02%20AM.jpeg"
+                alt="لقطة من تطبيق PocketKeep لإدارة المصاريف"
               />
             </div>
           </div>
@@ -67,30 +68,55 @@
       <section id="features" class="features">
         <div class="container">
           <div class="section-heading">
-            <span class="badge dark">لماذا PocketKeep؟</span>
-            <h2>تحكم كامل في مصاريفك، من أول لقمة إلى آخر شهر.</h2>
+            <span class="badge dark">مزايا PocketKeep</span>
+            <h2>كل مصاريفك اليومية أوضح وأسهل في المتابعة.</h2>
           </div>
-
           <div class="feature-grid">
             <article class="feature-card">
-              <div class="icon">💸</div>
-              <h3>تسجيل المصاريف اليومية</h3>
-              <p>أضف نفقاتك بسرعة وسهولة، مع تفاصيل دقيقة لكل عملية.</p>
+              <div class="icon" aria-hidden="true">💸</div>
+              <h3>تسجيل المصاريف</h3>
+              <p>سجّل نفقاتك اليومية واحتفظ بتفاصيلها في مكان واحد.</p>
             </article>
             <article class="feature-card">
-              <div class="icon">📊</div>
-              <h3>تقارير ذكية</h3>
-              <p>تابع إنفاقك الشهري عبر تقارير واضحة وتقييمات فورية.</p>
+              <div class="icon" aria-hidden="true">📊</div>
+              <h3>تقارير مفيدة</h3>
+              <p>راجع ملخصات وتقارير تساعدك على فهم إنفاقك.</p>
             </article>
             <article class="feature-card">
-              <div class="icon">🔔</div>
-              <h3>تذكيرات ذكية</h3>
-              <p>احصل على تنبيهات في الوقت المناسب لتتبع ميزانيتك بذكاء.</p>
+              <div class="icon" aria-hidden="true">🔔</div>
+              <h3>تذكيرات</h3>
+              <p>استفد من التذكيرات لمتابعة مصاريفك بانتظام.</p>
             </article>
             <article class="feature-card">
-              <div class="icon">🧠</div>
-              <h3>تصنيفات ذكية</h3>
-              <p>راجع المصروفات بحسب الفئات مثل الطعام، النقل، التسوق والضروريات.</p>
+              <div class="icon" aria-hidden="true">🗂️</div>
+              <h3>تنظيم أوضح</h3>
+              <p>تابع مصاريفك بطريقة مرتبة من خلال واجهة سهلة الاستخدام.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="how-it-works">
+        <div class="container">
+          <div class="section-heading">
+            <span class="badge dark">ابدأ ببساطة</span>
+            <h2>ثلاث خطوات لمتابعة مصاريفك.</h2>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card">
+              <span class="step-number">١</span>
+              <h3>حمّل التطبيق</h3>
+              <p>نزّل PocketKeep مجانًا من متجر Google Play على جهاز Android.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">٢</span>
+              <h3>سجّل مصروفك</h3>
+              <p>أضف مصاريفك اليومية داخل التطبيق، من دون الحاجة إلى تسجيل دخول.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">٣</span>
+              <h3>تابع تقاريرك</h3>
+              <p>ارجع إلى التقارير والتذكيرات لمتابعة إنفاقك وتنظيم مصروفاتك.</p>
             </article>
           </div>
         </div>
@@ -100,22 +126,18 @@
         <div class="container about-grid">
           <div class="about-copy">
             <span class="badge dark">عن التطبيق</span>
-            <h2>واجهة بسيطة، تجربة واضحة، وهدف واحد: إنفاق أكثر ووعي أكبر.</h2>
+            <h2>إدارة يومية أبسط، ووعي أفضل بمصاريفك.</h2>
             <p>
-              PocketKeep صمّم ليخدمك سواء كنت تدير مصروفاتك الشخصية أو تتبع
-              ميزانيتك اليومية في أسهل طريقة ممكنة. التطبيق يساعدك على رؤية أين
-              تذهب أموالك، وتحديد الأولويات، والالتزام بميزانيتك بمرونة.
+              PocketKeep تطبيق مجاني لأجهزة Android يساعدك على تسجيل مصاريفك
+              اليومية ومراجعة تقاريرك والاستفادة من التذكيرات، من دون الحاجة إلى
+              تسجيل دخول.
             </p>
-            <ul>
-              <li>لوحة معلومات سهلة الفهم</li>
-              <li>إحصاءات شهرية وتاريخية</li>
-              <li>تجربة استخدام نظيفة ومحدّدة</li>
-            </ul>
           </div>
           <div class="about-visual">
             <img
-              src="WhatsApp%20Image%202026-11-08%20at%209.49.30%20AM.jpeg"
-              alt="واجهة التطبيق الرئيسية"
+              src="WhatsApp%20Image%202026-11-08%20at%2010.09.03%20AM.jpeg"
+              alt="واجهة أخرى من تطبيق PocketKeep"
+              loading="lazy"
             />
           </div>
         </div>
@@ -124,16 +146,39 @@
       <section id="screens" class="gallery">
         <div class="container">
           <div class="section-heading">
-            <span class="badge dark">شاشات التطبيق</span>
-            <h2>من تجربة الاستخدام إلى التقارير ووظائف التذكير.</h2>
+            <span class="badge dark">من داخل التطبيق</span>
+            <h2>تعرّف على واجهات PocketKeep.</h2>
           </div>
-
           <div class="gallery-grid">
-            <img src="WhatsApp%20Image%202026-11-08%20at%209.49.29%20AM%20(2).jpeg" alt="شاشة التطبيق 1" />
-            <img src="WhatsApp%20Image%202026-11-08%20at%209.49.29%20AM%20(3).jpeg" alt="شاشة التطبيق 2" />
-            <img src="WhatsApp%20Image%202026-11-08%20at%209.49.30%20AM%20(1).jpeg" alt="شاشة التطبيق 3" />
-            <img src="WhatsApp%20Image%202026-11-08%20at%209.49.30%20AM%20(2).jpeg" alt="شاشة التطبيق 4" />
+            <img src="WhatsApp%20Image%202026-11-08%20at%2010.09.03%20AM%20(1).jpeg" alt="لقطة شاشة من PocketKeep" loading="lazy" />
+            <img src="WhatsApp%20Image%202026-11-08%20at%2010.09.04%20AM.jpeg" alt="لقطة شاشة من PocketKeep" loading="lazy" />
+            <img src="WhatsApp%20Image%202026-11-08%20at%2010.09.04%20AM%20(1).jpeg" alt="لقطة شاشة من PocketKeep" loading="lazy" />
           </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq">
+        <div class="container faq-container">
+          <div class="section-heading">
+            <span class="badge dark">أسئلة شائعة</span>
+            <h2>إجابات سريعة عن التطبيق.</h2>
+          </div>
+          <details class="faq-item">
+            <summary>هل PocketKeep مجاني؟</summary>
+            <p>نعم، التطبيق مجاني للتنزيل من متجر Google Play.</p>
+          </details>
+          <details class="faq-item">
+            <summary>هل أحتاج إلى إنشاء حساب؟</summary>
+            <p>لا، يمكنك استخدام التطبيق من دون تسجيل دخول.</p>
+          </details>
+          <details class="faq-item">
+            <summary>ما الذي أستطيع فعله في التطبيق؟</summary>
+            <p>يمكنك تسجيل مصاريفك اليومية ومراجعة التقارير والاستفادة من التذكيرات.</p>
+          </details>
+          <details class="faq-item">
+            <summary>على أي أجهزة يعمل التطبيق؟</summary>
+            <p>التطبيق متوفر لأجهزة Android عبر متجر Google Play.</p>
+          </details>
         </div>
       </section>
 
@@ -141,11 +186,18 @@
         <div class="container download-box">
           <div>
             <span class="badge dark">ابدأ اليوم</span>
-            <h2>حمّل PocketKeep الآن واستمتع بتجربة إدارة مالية أسهل.</h2>
+            <h2>حمّل PocketKeep وتابع مصاريفك بسهولة.</h2>
           </div>
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=app.pocketkeep" target="_blank" rel="noopener noreferrer">
-            حمّل من متجر Google Play
-          </a>
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=app.pocketkeep" target="_blank" rel="noopener noreferrer">حمّل من متجر Google Play</a>
+        </div>
+      </section>
+
+      <section class="rate-app" aria-labelledby="rate-title">
+        <div class="container rate-box">
+          <div class="rate-stars" aria-hidden="true">★★★★★</div>
+          <h2 id="rate-title">جرّبت PocketKeep؟ شاركنا رأيك.</h2>
+          <p>تقييمك على Google Play يساعد الآخرين على اكتشاف التطبيق.</p>
+          <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=app.pocketkeep" target="_blank" rel="noopener noreferrer">قيّم التطبيق على Google Play</a>
         </div>
       </section>
     </main>
@@ -153,7 +205,7 @@
     <footer class="footer">
       <div class="container footer-inner">
         <p>© 2026 PocketKeep — كل الحقوق محفوظة.</p>
-        <div class="socials">
+        <div class="socials" aria-label="حسابات التواصل الاجتماعي">
           <a href="https://www.instagram.com/pocket_keep?mdxt=emRoZmthNG9pcmxn" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://www.facebook.com/share/18fKNTJ8n2/" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
